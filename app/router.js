@@ -7,6 +7,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('calendar');
+  this.route('about-nullify');
+  this.route('contact');
 });
 
 export default Router;
