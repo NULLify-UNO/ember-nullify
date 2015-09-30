@@ -1,23 +1,31 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {{link-to 'Home' 'index' class="navbar-brand" }}
+<div class="wrapper">
+  {{!-- Push Wrapper --}}
+  <div class="mp-pusher" id="mp-pusher">
+  
+    {{push-menu}}
+
+    <div class="nav-thin">
+      <div class="icon-menu" id="trigger">
+        <i class="fa fa-bars"></i>
+        <span class="nav-wording">MENU</span>
+      </div>
+      <div class="icon-cal">
+        <a href="/calendar/">
+          <i class="fa fa-calendar"></i>
+          <span class="nav-wording">CALENDAR</span>
+        </a>
+      </div>
+      <div class="logo-container">
+        <a href="/"><img id="main-logo" class="logo" src="../../../styles/img/favicons/favicon-96x96.png"/></a>
+      </div>
     </div>
 
-    <div class="collapse navbar-collapse" id="menu-collapse">
-      <ul class="nav navbar-nav">
-        <li>{{link-to 'About Nullify' 'about-nullify'}}</li>
-        <li>{{link-to 'Contact Us' 'contact'}}</li>
-      </ul>
-    </div>
+
+    
   </div>
-</nav>
+</div>
+
+
 
 <div class="container">
   {{outlet}}
